@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Intro'/>
+        <page name='Init Core Data the Easy way NSPersistentContainer'/>
+        <page name='The Core Data Stack'/>
+        <page name='Insert a Project'/>
+        <page name='Insert a Project with many tasks'/>
+        <page name='Delete'/>
+        <page name='Fetch Projects'/>
+        <page name='Fetch Tasks'/>
+        <page name='Generic Fetch'/>
+        <page name='Custom Core Data Stack'/>
+        <page name='Undo management'/>
+        <page name='HowToUsePlaygrounds'/>
+    </pages>
+</playground>
