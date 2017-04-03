@@ -2,6 +2,8 @@
 
 An introduction to Core Data you can test, use, change & code, all in just one Playground!
  
+![A screen capture showing one playground page](img/init-core-data.png)
+
  ## The model used in this example
   
  Core Data wants to be the model of your App, [Markus Zarra](http://martiancraft.com/blog/2015/03/core-data-stack/) once dixit.
