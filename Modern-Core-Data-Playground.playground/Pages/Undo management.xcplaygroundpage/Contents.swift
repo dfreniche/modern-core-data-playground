@@ -23,7 +23,7 @@ do {
     fatalError("Unresolved error \(error)")
 }
 
-print(project1.name)    // prints "World Domination"
+project1.name.map{ print($0) }    // prints "World Domination"
 
 /*: We need an UndoManager in our Context */
 context.undoManager = UndoManager()
@@ -34,11 +34,11 @@ project1.name = "Something strange"
 
 context.undoManager?.endUndoGrouping()
 
-print(project1.name)    // prints "Something strange"
+project1.name.map{ print($0) }    // prints "Something strange"
 
 // Now we undo that change
 
 context.undo()
 
-print(project1.name)    // prints "World Domination"
+project1.name.map{ print($0) }    // prints "World Domination"
 
