@@ -1,5 +1,8 @@
 /*: Let's explore the Core Data Stack created using an NSPersistentContainer */
 
+//: first step to use Core Data is to import the framework
+
+import CoreData
 
 // hwContainer is a func located in this playground's common Sources folder, file HWContainer.swift
 
