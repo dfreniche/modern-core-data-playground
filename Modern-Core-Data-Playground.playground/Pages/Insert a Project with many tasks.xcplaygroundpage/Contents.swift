@@ -1,5 +1,4 @@
 import CoreData
-import Foundation
 
 let container = hwContainer()   // init an NSPersistentContainer
 

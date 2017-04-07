@@ -1,4 +1,3 @@
-import UIKit
 import CoreData
 
 /*: Let's see how we delete objects in Core Data */

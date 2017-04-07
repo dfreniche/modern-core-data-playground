@@ -1,12 +1,12 @@
-import CoreData
-
-/*: 
+/*:
  # The Core Data Stack
  
  The Core Data Stack is how we refer to the neccessary components to make a basic Core Data App work. We need at least one NSManagedObjectContext, a NSPersistentStoreCoordinator and a NSManagedObjectModel. In the past, creating this stack was a little bit tedious and you needed to master all the nitty-gritty details. Now it's way simpler.
 
  Let's init an NSPersistentContainer with the name `CoreDataModelHelper`. This will be the name of the generated SQLite database file and the name of the Managed Object Model it expects to load. See the global Resources folder in this Playground the file CoreDataModelHelper.momd? That file contains the "definitions" of our Core Data Entities. 
  */
+
+import CoreData
 
 let container = NSPersistentContainer(name: "CoreDataModelHelper")
 
