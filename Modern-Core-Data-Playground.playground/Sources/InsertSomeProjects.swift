@@ -1,6 +1,32 @@
 import CoreData
 
-public func insertOneProjectInContext(context: NSManagedObjectContext) {
+public func insertEmptyProjectInContext(context: NSManagedObjectContext) -> Project {
+    // insert a Project in the context
+    let project = Project(context: context)
+    
+    // set some properties
+    project.name = "Evil project 1"
+    project.priority = 1
+    
+    do {
+        // how many objects pending to be saved?
+        let newObjectsCount = context.insertedObjects.count
+        print("Preparing to save \(newObjectsCount)")
+        
+        // save
+        try context.save()
+        
+        print("Saved")
+        
+    } catch {
+        fatalError("Unresolved error \(error)")
+    }
+    
+    return project
+}
+
+
+public func insertOneProjectInContext(context: NSManagedObjectContext) -> Project {
     // insert a Project in the context
     let project1 = Project(context: context)
 
@@ -31,6 +57,8 @@ public func insertOneProjectInContext(context: NSManagedObjectContext) {
     } catch {
         fatalError("Unresolved error \(error)")
     }
+    
+    return project1
 }
 
 public func insertSomeProjectsInContext(context: NSManagedObjectContext) {
