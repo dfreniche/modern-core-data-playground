@@ -1,6 +1,6 @@
 import CoreData
 
-/*: Let's see how we delete objects in Core Data */
+//: Let's see how we delete objects in Core Data
 
 let container = hwContainer()   // init an NSPersistentContainer
 
@@ -14,8 +14,7 @@ let numProjectsBeforeDelete = countAllProjects(context: context)
 
 print("Projects before deleting \(numProjectsBeforeDelete)")
 
-/*: Let's see how we can __delete__ all projects
- */
+//: Let's see how we can __delete__ all projects
 
 // This function, when called, deletes all projects from Core Data. It need a context
 
