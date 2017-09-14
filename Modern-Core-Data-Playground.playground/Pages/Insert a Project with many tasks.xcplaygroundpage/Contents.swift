@@ -2,6 +2,8 @@ import CoreData
 
 let container = hwContainer()   // init an NSPersistentContainer
 
+//: Insert a new Project and then some Tasks linked to that project
+
 // get the main thread attached context
 let context = container.viewContext
 
@@ -11,6 +13,8 @@ let project1 = Project(context: context)
 // set some properties
 project1.name = "Evil project 1"
 project1.priority = 1
+
+//: There's a 1--n relationship between Project and Task. So each task belongs to a project
 
 let task1 = Task(context: context)
 task1.title = "Locate 007"

@@ -1,4 +1,4 @@
-# Modern Core Data Playground: Core Data in Swift 3 / Xcode 8... inside a Playground!
+# Modern Core Data Playground: Core Data in Swift / Xcode... inside a Playground!
 
 An introduction to Core Data you can test, use, change & code, all in just one Playground!
  
@@ -44,8 +44,9 @@ An introduction to Core Data you can test, use, change & code, all in just one P
 
 
 ## Requirements
-* [Xcode 8](https://developer.apple.com/xcode/downloads/) or greater
-* Swift 3
+* [Xcode](https://developer.apple.com/xcode/downloads/) or greater
+* Swift (included in Xcode)
+* there are Xcode 8 (Swift 3) and 9 (Swift 4) versions. Look at the tags
 
 ## Installation
 

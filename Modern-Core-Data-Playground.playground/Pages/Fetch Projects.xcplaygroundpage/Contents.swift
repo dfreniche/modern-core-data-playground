@@ -21,7 +21,7 @@ fetchRequest.sortDescriptors = [sortDescriptor]
 
 do {
     // run the fetch request
-    let result = try context.fetch(fetchRequest)
+    let result: [Project] = try context.fetch(fetchRequest)
     print("Num records: \( result.count )")
     
     // print all projects

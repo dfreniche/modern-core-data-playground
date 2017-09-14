@@ -1,6 +1,6 @@
 import CoreData
 
-/*: Every single time we insert, delete, etc. something in a Core Data Context a Notification is sent */
+//: Every single time we insert, delete, etc. something in a Core Data Context a Notification is sent
 
 // we get a NSPersistentContainer
 let container = hwContainer()
@@ -18,11 +18,11 @@ public class CoreDataNotificationObserver: NSObject {
         NotificationCenter.default.removeObserver(self)
     }
     
-    public func receivedInsertNotification() {
+    @objc public func receivedInsertNotification() {
         print("👉 Insert notification received")
     }
     
-    public func receivedUpdateNotification() {
+    @objc public func receivedUpdateNotification() {
         print("👉 Update notification received")
     }
 }

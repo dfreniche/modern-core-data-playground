@@ -14,7 +14,6 @@ persistentStoreDescription.shouldInferMappingModelAutomatically = true
 /*: 
  And now we simply create our `NSPersistentContainer` and set the `persistentStoreDescriptions`
  `persistentStoreDescriptions` is an array of descriptions
- 
  */
 
 let container = NSPersistentContainer(name: "CoreDataModelHelper")

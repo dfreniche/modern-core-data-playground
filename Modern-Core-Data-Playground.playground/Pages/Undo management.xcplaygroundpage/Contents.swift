@@ -25,7 +25,7 @@ do {
 
 project1.name.map{ print($0) }    // prints "World Domination"
 
-/*: We need an UndoManager in our Context */
+//: We need an UndoManager in our Context
 context.undoManager = UndoManager()
 context.undoManager?.beginUndoGrouping()
 

@@ -23,4 +23,6 @@
  
  ```
  
+ 
+ You can find this project [here](https://github.com/dfreniche/modern-core-data-playground)
  */

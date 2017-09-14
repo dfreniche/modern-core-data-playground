@@ -6,6 +6,8 @@
  Let's init an NSPersistentContainer with the name `CoreDataModelHelper`. This will be the name of the generated SQLite database file and the name of the Managed Object Model it expects to load. See the global Resources folder in this Playground the file CoreDataModelHelper.momd? That file contains the "definitions" of our Core Data Entities. 
  */
 
+//: First step to use Core Data is to import the framework
+
 import CoreData
 
 let container = NSPersistentContainer(name: "CoreDataModelHelper")
@@ -14,9 +16,9 @@ let container = NSPersistentContainer(name: "CoreDataModelHelper")
 
 print(container.persistentStoreDescriptions.debugDescription)
 
-print("Number of persistent stores loaded \(container.persistentStoreCoordinator.persistentStores.count)")
+print("\nNumber of persistent stores loaded \(container.persistentStoreCoordinator.persistentStores.count)")
 
-/*: we load the Persistent Store here */
+//: we load the Persistent Store here
 
 container.loadPersistentStores(completionHandler: { (storeDescription, error) in
     if let error = error as NSError? {
@@ -26,7 +28,7 @@ container.loadPersistentStores(completionHandler: { (storeDescription, error) in
 
 //: now the persisten Store is loaded!
 
-print("Number of persistent stores loaded \(container.persistentStoreCoordinator.persistentStores.count)")
+print("\nNumber of persistent stores loaded \(container.persistentStoreCoordinator.persistentStores.count)")
 
 //: we get access to an NSManagedObjectContext, which is where we insert / delete / work with our Objects
 
